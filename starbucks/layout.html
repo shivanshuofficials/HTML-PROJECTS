@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>starbucks</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-attachment: fixed;
+            overflow-x: hidden;
+            background-color: white;
+            /* background-image: url(/starbucks/bg3.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+         */
+        }
+
+        /* Navbar styles */
+        .navbar {
+            position: sticky ;top: 0;
+            padding: 10px;
+            /* background-color: rgb(57, 34, 34); */
+            background-color: #8d8d8d;
+            overflow: hidden;
+            flex-grow: 1;
+           /* backdrop-filter: blur(10px); */
+        }
+
+        .navbar a {
+
+            display: inline;
+            color: white;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .navbar a:hover {
+
+            color: black;
+            /* color:pink; */
+            /* color: #2596be; */
+        }
+
+        .icon1 {
+            float: right;
+            margin-right: 5px;
+            padding-inline: 10px;
+            color: white;
+        }
+
+        .icon2 {
+            float: right;
+            margin-right: 5px;
+            padding-inline: 10px;
+            color: white;
+        }
+
+        .icon3 {
+            float: right;
+            margin-right: 5px;
+            padding-inline: 10px;
+            color: white;
+        }
+
+        .logo {
+            float: left;
+        }
+
+        .blank1 {
+            height: 400px;
+            /* background-color: rgb(237, 188, 188) ;  */
+            margin-top: -60px;
+            /* background-image: url(/starbucks/bg.png); */
+            background: transparent;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+    
+        }
+
+        .blank2 {
+            background-color: #8d8d8d;
+            height: 405px;
+        }
+
+        .blank3 {
+            height: 100px;
+            border: 2px;
+            background-color: #8d8d8d;
+            text-align: center;
+
+        }
+
+        .blank4 {
+            display: flex;
+            width: 100%;
+            border: 1px;
+            background-color: #8d8d8d;
+        }
+
+        .blank5 {
+            display: flex;
+            width: 100%;
+            border: 1px;
+            background-color: #8d8d8d;
+
+        }
+
+
+        .banner1 {
+            float: left;
+            margin-top: 50px;
+            margin-left: 240px;
+            background-color: white;
+            height: 300px;
+            width: 300px;
+            /* background-image: url(https://c0.wallpaperflare.com/preview/716/61/136/person-holding-starbucks-coffee-cup.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px; */
+        }
+
+        .banner2 {
+            float: right;
+            margin-top: 50px;
+            margin-right: 280px;
+            background-color: white;
+            height: 300px;
+            width: 300px;
+            /* background-image: url(https://images.pexels.com/photos/311276/pexels-photo-311276.jpeg?cs=srgb&dl=pexels-hikaique-311276.jpg&fm=jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px; */
+        }
+
+        .tittle1 {
+
+            height: 95px;
+            width: 150px;
+        }
+
+        .button {
+
+            padding: 10px 20px;
+            background-color: grey;
+            text-align: center;
+            text-decoration: none;
+            border: 1px solid black;
+
+
+        }
+
+        .buttons {
+
+            width: 500px;
+            border: 2px;
+            border: 1px;
+            margin-right: 36px;
+        }
+
+        .tittle1 {
+            text-align: center;
+            height: fit-content;
+            width: fit-content;
+            margin-right: 30px;
+            border: 2px;
+            font-size: 40px;
+        }
+
+        .square {
+            width: 25%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-bottom: 20%;
+            margin: 40px;
+            background-color: white;
+            border-radius: 10px;
+
+        }
+
+        .square2 {
+            width: 25%;
+            padding-bottom: 20%;
+            background-color: white;
+            margin: 40px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 10px;
+
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .contact {
+            margin-bottom: 20px;
+        }
+
+        .social-icons {
+            font-size: 24px;
+        }
+
+        .icon {
+            color: #fff;
+            margin: 0 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: -10px;
+            height: 500px;
+            background-color: #8d8d8d;
+           
+            padding-left: 150px;
+        }
+    
+
+        .box{
+            background-color: white;
+
+            padding-right: 20px;
+            text-align: center;
+            font-size: 20px;
+            height: 70px;
+            width: 250px;
+            margin: 30px;
+            padding: 10px;
+        }
+       
+        h1{
+        font-size: 90px;
+        padding-left: 50px;
+        /* color: rgb(57, 34, 34); */
+        color: #f58142;
+    }
+    p{
+        font-size: 20px;
+        padding-left: 50px;
+          color: #FFEEDB;
+    }
+    span{
+        font-size: 90px;
+        color: #FFEEDB;
+    }
+
+    .Starbucks{
+        float: right;
+        transform: rotate(-20deg);
+        height: 400px;
+        margin-top: -350px;
+        margin-right: 55px;
+     }
+
+     .logo1{
+
+        width: 1rem;
+        border-radius: 50%;
+       
+     }
+
+     /* #img1 {
+        background-image: url(/starbucks/drink1.jpg);
+     }
+     #img2 {
+        background-image: url(/starbucks/drink2.jpg);
+     }
+     #img3 {
+        background-image: url(/starbucks/drink1.jpg);
+     }
+     #img4 {
+        background-image: url(/starbucks/drink4.jpg);
+     }
+     #img5 {
+        background-image: url(/starbucks/drink5.jpg);
+     }
+     #img6 {
+        background-image: url(/starbucks/drink6.jpg);
+     }
+     #img7 {
+        background-image: url(/starbucks/drink7.jpg);
+     }
+     #img8 {
+        background-image: url(/starbucks/b-removebg-preview.png);
+     } */
+    
+     
+
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="icon1">
+            <center><a href="try.html"><i class="fa-solid fa-house"></i>Home </a></center>
+        </div>
+
+        <div class="icon2">
+            <center><a href="ak .html"><i class="fa-solid fa-phone"></i>contact</a></center>
+        </div>
+        <div class="icon3">
+            <center><a href="s.html"><i class="fa-solid fa-user"></i>profile </a></center>
+        </div>
+        <div class="logo">
+            <center><img src="https://c4.wallpaperflare.com/wallpaper/171/540/984/starbucks-logo-green-illustration-wallpaper-preview.jpg" alt="" class="logo1"></i>logo </a></center>
+        </div>
+
+        <center><a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#features">Features</a>
+            <a href="#pages">Pages</a>
+            <a href="#blog">Blog</a>
+        </center>
+    </div>
+
+    <div class="blank1">
+        <!-- <h1>It's just not a coffee<br> It's <span>Starbucks</span>  </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  
+       Maiores ipsam<br> unde explicabo, hic ducimus qui excepturi beatae rem distinctio cum. 
+       <br>Dolor atque deleniti id culpa repellendus corrupti voluptas fugiat harum.</p>  -->
+        <!-- <img src="/starbucks/b-removebg-preview.png" class="Starbucks" >    -->
+    </div>
+
+    <div class="blank2">
+        <div class="banner1"></div>
+        <div class="banner2"></div>
+    </div>
+
+    <div class="blank3">
+        <center>
+            <div class="tittle1">our best seller</div>
+        </center>
+
+        <center>
+            <div class="buttons">
+                <button class="button" style="float: left;">new arrival</button>
+                <button class="button">best sellers</button>
+                <button class="button" style="float: right;">top rates</button>
+
+            </div>
+        </center>
+    </div>
+
+    <div class="blank4">
+        <div class="square"  id="img1"></div>
+        <div class="square" id="img2"></div>
+        <div class="square" id="img3"></div>
+        <div class="square" id="img4"></div>
+    </div>
+
+    <div class="blank5">
+        <div class="square2" id="img5"></div>
+        <div class="square2" id="img6"></div>
+        <div class="square2" id="img7"></div>
+        <div class="square2" id="img8"></div>
+    </div>
+
+    <div class="grid">
+
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      <br>
+
+        <div class="box" id="1"></div>
+        <div class="box" id="2"></div>
+        <div class="box" id="3"></div>
+      <br>
+
+        <div class="box" id="1"></div>
+        <div class="box" id="2"></div>
+        <div class="box" id="3"></div>
+
+    </div>
+    <footer>
+        <div class="contact">
+            <p>Contact Us:</p>
+            <p>Email: example@example.com</p>
+            <p>Phone: 123-456-7890</p>
+        </div>
+        <div class="social-icons">
+            <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

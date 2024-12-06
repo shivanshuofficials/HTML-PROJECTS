@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+
+    <style>
+        .container {
+            width: 50vh;
+            height: 70vh;
+            background-color: black;
+            position: relative;
+            overflow: hidden;
+            border-radius: 18px;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+            margin-left: 38%;
+            margin-top: 5%;
+        }
+
+        h1 {
+            position: absolute;
+            top: 2%;
+            left: 1%;
+            font-size: 30px;
+            color: white;
+        }
+
+        .top {
+            width: 100%;
+            height: 30%;
+            background-color:pink;
+        }
+        p{
+            position: absolute;
+            top: 10%;
+            left: 1%;
+            font-size: 15px;
+            color: white;
+            padding: 1%;
+      }
+
+      .profile{
+        background-color: white;
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        float: right;
+        margin-top: 10px;
+        margin-right: 10px;
+        background-image: url(https://images.pexels.com/photos/1553783/pexels-photo-1553783.jpeg?cs=srgb&dl=pexels-myca-1553783.jpg&fm=jpg);
+        background-size: cover;
+        background-position: center;
+
+      }
+
+      input{
+        position: absolute;
+        top: 23%;
+        left: 10%;
+        padding: 4%;
+        width: 70%;
+        height: 31px;
+        border-radius: 20px;
+        outline: none;
+        border: 1px solid black;
+        margin-top: -3px;
+      }
+
+      button{
+        position: absolute;
+        background-color:transparent;
+        top: 23.5%;
+        left: 70%;
+        width: 25px;
+        height: 25px;
+        margin-left: 4px;
+        border-radius: 100%;
+        border: none;
+        
+      }
+
+      i{
+        color: black;
+        font-size: 15px;
+        
+      }
+
+    
+
+     
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <h1>Hi, Coders</h1>
+            <p>where would you like to go ?</p>
+            <input type="search" placeholder="search" id="search" >
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            <div class="profile"></div>
+    </div>
+    
+</body>
+
+</html>
